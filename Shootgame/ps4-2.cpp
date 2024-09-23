@@ -93,7 +93,7 @@ int main(void)
     bool ball_State = false;
     float angle = 0;
     int ball_Color = 0;
-    float ball_v = 400 / 40 ;   
+    float ball_v = 400 / 40;   
     /*The for loop runs 40 times per second(because of the 0.025 second delay).If the window display speed is 40m / s, that's 400 pixels per second, or 10 pixels per for loop.*/
     float ball_vx = 0, ball_vy = 0;
     float ball_x = 55, ball_y = 545;
@@ -143,7 +143,7 @@ int main(void)
             }
             break;
         case FSKEY_SPACE:
-            if (false == ball_State && ball_Color <= 4)     //ÕâÀïÊÇÖ»ÈÃ´òÎå¸öÇò£¬É¾µôºó°ë²¿·Ö¾ÍÄÜ´òºÜ¶àÁË
+            if (false == ball_State && ball_Color <= 4)     //è¿™é‡Œæ˜¯åªè®©æ‰“äº”ä¸ªçƒï¼Œåˆ æ‰ååŠéƒ¨åˆ†å°±èƒ½æ‰“å¾ˆå¤šäº†
             {
                 ball_State = true;
                 //parameters changes about cannonball
@@ -177,7 +177,7 @@ int main(void)
                 if (Ob_hit_num[i] == 0 || Ob_hit_num[i] == 1)
                 {
                     if (ball_x > obs_x[i] - obs_w[i] / 2      
-                 //Õâ¶Î°ÑÕâ¸öÅö×²¼ì²â·ÅÔÚif (Ob_hit_num[i] == 0 || Ob_hit_num[i] == 1)Õâ¸öÌõ¼şÏÂÊÇÒòÎª£¬Èç¹û²»·ÅÔÚÕâ¸öÏÂÃæ£¬Ã¿´ÎĞ¡Çòµ½Õâ¸öobstacleµÄÇøÓò¶¼»áÏûÊ§£¬ÒòÎª±¾ÖÊÉÏÖ»ÊÇ²»drawÁË£¬µ«ÇøÓò»¹ÔÚ
+                 //è¿™æ®µæŠŠè¿™ä¸ªç¢°æ’æ£€æµ‹æ”¾åœ¨if (Ob_hit_num[i] == 0 || Ob_hit_num[i] == 1)è¿™ä¸ªæ¡ä»¶ä¸‹æ˜¯å› ä¸ºï¼Œå¦‚æœä¸æ”¾åœ¨è¿™ä¸ªä¸‹é¢ï¼Œæ¯æ¬¡å°çƒåˆ°è¿™ä¸ªobstacleçš„åŒºåŸŸéƒ½ä¼šæ¶ˆå¤±ï¼Œå› ä¸ºæœ¬è´¨ä¸Šåªæ˜¯ä¸drawäº†ï¼Œä½†åŒºåŸŸè¿˜åœ¨
                         && ball_x < obs_x[i] + obs_w[i] / 2
                         && ball_y < obs_y[i] + obs_h[i] / 2
                         && ball_y > obs_y[i] - obs_h[i] / 2)
